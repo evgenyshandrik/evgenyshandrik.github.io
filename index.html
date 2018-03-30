@@ -12,23 +12,12 @@
 
             <div class="horizontal-bar sidebar">
                 <div class="page-sidebar-inner slimscroll">
-                    <div class="logo-box">
-                        <a href="/" class="logo-text"><span>HP</span></a>
-                    </div>
                                         <div class="sidebar-header"><div class="sidebar-profile"><a class="profile-menu-link" href="/"><div class="sidebar-profile-image"><img class="img-circle img-responsive" src="https://admincp.hotpartner.biz/avatars/3114.jpg"></div><div class="sidebar-profile-details"><span>Åâãåíèé<br><small>QA</small></span></div></a></div></div><div class="menu accordion-menu"><li class=" active open"><a class="waves-effect waves-button" href="/site/index" target=""><span class="menu-icon glyphicon glyphicon-home"></span><p>Ãëàâíàÿ</p></a></li><li><a class="waves-effect waves-button" href="/finances/index" target=""><span class="menu-icon glyphicon glyphicon-briefcase"></span><p>Âûïëàòû&nbsp;<span class='badge badge-success pull-right'>15</span></p></a></li><li class="droplink"><a class="waves-effect waves-button" href="/offers/index?group=1" target=""><span class="menu-icon glyphicon glyphicon-flash"></span><p>Ïðåäëîæåíèÿ</p><span class="arrow"></span></a><ul class="sub-menu"><li><a href="/offers/index?group=1" target="">Îôôåðû</a></li><li><a href="/offers/index?is_other=1" target="">Ïîäêëþ÷åííûå îôôåðû</a></li><li><a href="/offers/index?domatv=1" target="">Îôôåðû DomaTV</a></li><li><a href="/offers/categories" target="">Êàòåãîðèè îôôåðîâ</a></li><li><a href="/rates/index" target="">Êóðñû</a></li></ul></li><li class="droplink"><a class="waves-effect waves-button" href="/stores/index" target=""><span class="menu-icon glyphicon glyphicon-blackboard"></span><p>Øàáëîíû</p><span class="arrow"></span></a><ul class="sub-menu"><li><a href="/stores/index" target="">Øàáëîíû</a></li><li><a href="/stores/requests" target="">Çàïðîñû íà ïðîêëàäêè</a></li></ul></li><li class="droplink"><a class="waves-effect waves-button" href="/orders/index" target=""><span class="menu-icon glyphicon glyphicon-shopping-cart"></span><p>Çàêàçû</p><span class="arrow"></span></a><ul class="sub-menu"><li><a href="/orders/index" target="">Çàêàçû</a></li><li><a href="/orders/index?type=4" target="">Çàêàçû DomaTV</a></li><li><a href="/conversions/index" target="">Êîíâåðñèè</a></li></ul></li><li class="droplink"><a class="waves-effect waves-button" href="/users/index" target=""><span class="menu-icon glyphicon glyphicon-user"></span><p>Ïîëüçîâàòåëè&nbsp;</p><span class="arrow"></span></a><ul class="sub-menu"><li><a href="/users/index" target="">Ïîëüçîâàòåëè</a></li><li><a href="/users/advertisers" target="">Ðåêëàìîäàòåëè</a></li><li><a href="/groups/index" target="">Ãðóïïû</a></li><li><a href="/rbac/roles" target="">Ðîëè</a></li><li><a href="/rbac/permissions" target="">Ïðàâà</a></li><li><a href="/journal/index" target="">Îáùèé æóðíàë</a></li><li><a href="/users/payments" target="">Ïëàòåæíûå äàííûå</a></li></ul></li><li><a class="waves-effect waves-button" href="/agents/index" target=""><span class="menu-icon glyphicon glyphicon-briefcase"></span><p>Àãåíòû&nbsp;</p></a></li><li class="droplink"><a class="waves-effect waves-button" href="/stats/total" target=""><span class="menu-icon glyphicon glyphicon-briefcase"></span><p>Ñòàòèñòèêà</p><span class="arrow"></span></a><ul class="sub-menu"><li><a href="/stats/total" target="">Îáùàÿ ñòàòèñòèêà</a></li><li><a href="/stats/index" target="">Ñòàòèñòèêà ïî âýá </a></li><li><a href="/stats/api" target="">Ñòàòèñòèêà ïî API</a></li><li><a href="/stats/ref_system" target="">Ñòàòèñòèêà ïî ðåô.ñèñòåìå</a></li><li><a href="/stats/users" target="">Äèíàìèêà çàêàçîâ</a></li><li><a href="/users/statistics" target="">Äèíàìèêà âûêóïà</a></li></ul></li><li><a class="waves-effect waves-button" href="/editor/index" target=""><span class="menu-icon glyphicon glyphicon-floppy-open"></span><p>Ðåäàêòîð&nbsp;</p></a></li><li><a class="waves-effect waves-button" href="/chat/index" target=""><span class="menu-icon glyphicon glyphicon-bullhorn"></span><p>×àò&nbsp;<not-readed/></p></a></li><li><a class="waves-effect waves-button" href="/help/index" target=""><span class="menu-icon glyphicon glyphicon-question-sign"></span><p>Áàçà çíàíèé</p></a></li><li><a class="waves-effect waves-button" href="/news/index" target=""><span class="menu-icon glyphicon glyphicon-refresh"></span><p>Íîâîñòè</p></a></li><li><a class="waves-effect waves-button" href="/api/index" target=""><span class="menu-icon glyphicon glyphicon-wrench"></span><p>API&nbsp;</p></a></li><li><a class="waves-effect waves-button" href="/test/index" target=""><span class="menu-icon glyphicon glyphicon-flash"></span><p>Àâòîòåñòû&nbsp;</p></a></li><li><a class="waves-effect waves-button" href="/site/logout" target=""><span class="menu-icon glyphicon glyphicon-off"></span><p></p></a></li></div>                </div><!-- Page Sidebar Inner -->
             <div class="page-inner" style="padding-bottom: 0;">
 <div class="col-md-12" ng-controller="SiteController">
     <div class="col-lg-2 col-md-4">
         <div class="panel info-box panel-white">
-            <div class="panel-body">
-                <div class="info-box-stats">
-                    <p class="counter">{{data.present.all | number:0}} / {{data.present.all - data.present.trash  | number:0}}</p>
-                    <span class="info-box-title">223
-                        <span ng-class="{'glyphicon glyphicon-arrow-up arrowUp':data.present.all > data.previous.all, 'glyphicon glyphicon-arrow-down arrowDown':data.present.all < data.previous.all}"></span>
-                        <span > íà {{(data.present.all - data.previous.all )>0 ? data.present.all-data.previous.all : data.previous.all-data.present.all}} </span>
-                    </span>
-
-                </div>
+            <div class="panel-body">              
                 <div class="info-box-icon">
                     <i class="icon-arrow-right green"></i>
                 </div>
@@ -41,29 +30,6 @@
             </div>
         </div>
     </div>
-    <div class="col-lg-2 col-md-4">
-        <div class="panel info-box panel-white">
-            <div class="panel-body">
-                <div class="info-box-stats">
-                    <p class="counter">{{data.present.got  | number:0}} / {{isNaN(data.present.got/(data.present.all-data.present.trash)) ? "0" : data.present.got/(data.present.all - data.present.trash)*100 | number : 1}}%</p>
-                    <span class="info-box-title">Ïðèíÿòî
-                        <span ng-class="{'glyphicon glyphicon-arrow-up arrowUp':(data.present.got/(data.present.all-data.present.trash)*100) > (data.previous.got/(data.previous.all-data.previous.trash)*100), 'glyphicon glyphicon-arrow-down arrowDown':(data.present.got/(data.present.all-data.present.trash)*100) < (data.previous.got/(data.previous.all-data.previous.trash)*100)}"></span>
-
-                        <span> íà {{(data.present.got/(data.present.all-data.present.trash)*100) > (data.previous.got/(data.previous.all-data.previous.trash)*100) ? (data.present.got/(data.present.all-data.present.trash)*100)-(data.previous.got/(data.previous.all-data.previous.trash)*100) : (data.previous.got/(data.previous.all-data.previous.trash)*100)-(data.present.got/(data.present.all-data.present.trash)*100) | number : 1}} %</span>
-                    </span>
-                </div>
-                <div class="info-box-icon">
-                    <i class="icon-check blue"></i>
-                </div>
-                <div class="info-box-progress">
-                    <div class="progress progress-xs progress-squared bs-n">
-                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: {{data.present.got/data.present.all*100}}%">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>        
 </div>
             </div><!-- Page Inner -->
         </main><!-- Page Content -->
