@@ -21,18 +21,22 @@ body {
   border-radius: 14px;
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
 }
+
+/* ===== HEADER WITH PHOTO ===== */
 .header {
   display: flex;
   align-items: center;
-  gap: 30px;
-  margin-bottom: 30px;
+  gap: 40px;
+  margin-bottom: 40px;
 }
-.header img {
+.photo img {
   width: 180px;
   height: 180px;
-  border-radius: 10px;
+  border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 4px solid #ffffff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  background-color: #f9f9f9;
 }
 h1 {
   font-size: 2.4em;
@@ -95,17 +99,22 @@ ul {
   border: 1px solid #d0f1ef;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
 }
+
+/* ===== RESPONSIVE ===== */
 @media (max-width: 700px) {
   .container { padding: 30px; margin: 20px; }
-  .header { flex-direction: column; align-items: flex-start; }
-  .header img { width: 150px; height: 150px; }
+  .header { flex-direction: column; align-items: center; text-align: center; }
+  .photo img { width: 150px; height: 150px; }
 }
 </style>
 </head>
 <body>
 <div class="container">
+
   <div class="header">
-    <img src="IMG_6765.jpeg" alt="Evgeni Shandrik Photo">
+    <div class="photo">
+      <img src="IMG_6765.jpeg" alt="Evgeni Shandrik">
+    </div>
     <div>
       <h1>Evgeni Shandrik</h1>
       <div class="contact">
@@ -117,10 +126,135 @@ ul {
     </div>
   </div>
 
-  <!-- остальная часть без изменений -->
-  <!-- (General Information, Experience, Education, Skills, Certificates, Online Courses) -->
-  
-  <!-- вставь сюда остальные секции из своего кода -->
+  <div class="section">
+    <h2>General Information</h2>
+    <p><strong>Team Lead QA | Project Manager (Mobile Team)</strong>. <br />
+      Automation testing specialist with hands-on experience in UI, API, and mobile testing using multiple tools and frameworks.<br />
+      Skilled in planning and managing the full mobile development lifecycle — from requirements analysis and roadmap creation to on-time delivery.<br />
+      Proven ability to coordinate cross-functional teams (developers, QA, and designers), resolve blockers, and ensure workflow transparency.<br />
+      Experienced in progress monitoring, deadline control, and maintaining high product quality standards.<br />
+      Strong communicator with stakeholders — aligning priorities, managing expectations, and ensuring smooth collaboration.<br />
+      Oversee testing and release processes for App Store, ensuring stable, timely, and high-quality releases.<br />
+      Proactive in identifying risks, mitigating issues, and driving continuous improvement in team efficiency and project outcomes.</p>
+  </div>
+
+  <div class="section">
+    <h2>Experience</h2>
+
+    <div class="job">
+      <div class="job-title">Team Lead QA | Project Manager (Mobile Team), LLC “Neotech Development”</div>
+      <div class="job-date">Dec 2020 – Present</div>
+      <ul>
+        <li>Automation testing mobile applications (Java, Python, Appium)</li>
+        <li>Automation testing web services (Python, Postman)</li>
+        <li>Manual testing mobile applications</li>
+        <li>Creating strategy of testing</li>
+        <li>Team coordination</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-title">QA Automation Engineer, LLC “Neotech Development”</div>
+      <div class="job-date">May 2019 – Dec 2020</div>
+      <ul>
+        <li>Automation testing mobile applications (Java, Appium)</li>
+        <li>Automation testing UI web applications (Java, Python, Selenium WebDriver, TestNG, Allure Report, Jenkins)</li>
+        <li>Automation testing web services (Python, Postman)</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-title">QA Automation Engineer, JLLC “SYSTEM TECHNOLOGIES”</div>
+      <div class="job-date">Apr 2018 – May 2019</div>
+      <ul>
+        <li>Automation testing web services (Postman, Newman)</li>
+        <li>Automation testing UI web applications (Java, Selenium WebDriver, TestNG, Allure Report, Jenkins)</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-title">QA Engineer, LLC “Astilba-Trade”</div>
+      <div class="job-date">Sep 2017 – Apr 2018</div>
+      <ul>
+        <li>Analysis of technical documentation</li>
+        <li>Creating test cases</li>
+        <li>Functional testing</li>
+        <li>Creating automated tests for UI</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-title">Software Engineer, RUE “Vitebsk Center of Standardization, Metrology and Certification”</div>
+      <div class="job-date">Apr 2014 – Sep 2017</div>
+      <ul>
+        <li>Domain network administration (more than 150 PCs)</li>
+        <li>Support of accounting programs</li>
+        <li>Development and support of self-created web and desktop applications</li>
+        <li>Company website’s support</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Education</h2>
+    <p><strong>2009 – 2014:</strong> Polotsk State University — Information Security Specialist</p>
+  </div>
+
+  <div class="section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div><strong>Programming languages:</strong> Java, Python, Swift (basic)</div>
+      <div><strong>Automation testing:</strong> Appium, Selenium WebDriver</div>
+      <div><strong>API Testing:</strong> Postman (Newman), Paw, Soap UI</div>
+      <div><strong>Sniffers:</strong> Proxyman, Charles</div>
+      <div><strong>Other tools:</strong> TestNG, Allure Report, Kibana, Docker, Fast Track</div>
+      <div><strong>Continuous Integration:</strong> Jenkins</div>
+      <div><strong>Version control system:</strong> Git</div>
+      <div><strong>Tracking systems:</strong> Jira</div>
+      <div><strong>Test management software:</strong> TestRail, TestLink, Adaptavist</div>
+      <div><strong>English:</strong> B1 level</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Certificates</h2>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/1vnGXuuu1U9yo4HSuCLoxSDHqd5wkUmQX/view" target="_blank">
+        Project Management Fundamentals
+      </a></li>
+      <li><a href="https://drive.google.com/file/d/12TMy-bthPYgU64n7KVomB0WZvtdnbU7I/view?usp=sharing" target="_blank">
+        Selenium WebDriver. Automation of testing web applications
+      </a></li>
+      <li><a href="https://drive.google.com/file/d/0B-EMPgNEVvMhZHNrRnF5M2NlWHM/view?usp=drive_web" target="_blank">
+        Foundations of software testing
+      </a></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Online Courses</h2>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/1-JHLYSgzMoi-TFlej8a6JTt6PbQd6nkX/view" target="_blank">
+        Stepik: Основы Git
+      </a></li>
+      <li><a href="https://drive.google.com/file/d/1OQ5YuVOPbCfrQdfbOuzeGV0SQvtAozEJ/view" target="_blank">
+        Stepik: Программирование на Python
+      </a></li>
+      <li><a href="https://www.sololearn.com/Certificate/CT-VCVKEGBO/pdf" target="_blank">
+        Sololearn: Java course
+      </a></li>
+      <li><a href="https://www.sololearn.com/Certificate/CT-DGOGBBXL/pdf" target="_blank">
+        Sololearn: JavaScript course
+      </a></li>
+      <li><a href="https://www.sololearn.com/Certificate/CT-T5KBEQVJ/pdf" target="_blank">
+        Sololearn: HTML course
+      </a></li>
+      <li><a href="https://www.sololearn.com/nl/certificates/CT-TQHMWTEA" target="_blank">
+        Sololearn: C course
+      </a></li>
+    </ul>
+  </div>
+
 </div>
 </body>
 </html>
