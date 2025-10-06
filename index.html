@@ -1,13 +1,183 @@
-<html lang="ru-RU" ng-app="hp">
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evgeny Shandrik – QA Team Lead</title>
+<style>
+    body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        background-color: #f7f9fc;
+        color: #333;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 900px;
+        background: #fff;
+        margin: 40px auto;
+        padding: 40px 50px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        border-radius: 8px;
+    }
+    h1, h2, h3 {
+        color: #004d80;
+        margin-top: 0;
+    }
+    h1 {
+        font-size: 2em;
+        border-bottom: 3px solid #004d80;
+        padding-bottom: 10px;
+    }
+    .contact {
+        margin-bottom: 30px;
+    }
+    .contact a {
+        color: #004d80;
+        text-decoration: none;
+    }
+    .section {
+        margin-bottom: 35px;
+    }
+    .job {
+        margin-bottom: 20px;
+    }
+    .job-title {
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+    .job-date {
+        color: #666;
+        font-size: 0.9em;
+    }
+    ul {
+        margin: 8px 0 8px 25px;
+    }
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 10px;
+    }
+    .skills-grid div {
+        background: #f0f6fb;
+        padding: 10px 15px;
+        border-radius: 6px;
+    }
+    @media (max-width:600px){
+        .container { padding: 25px; }
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Evgeny Shandrik</h1>
+    <div class="contact">
+        <p>📞 Skype: <a href="skype:evgen.shandryk">evgen.shandryk</a></p>
+        <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/evgeny-shandrik" target="_blank">in/evgeny-shandrik</a></p>
+        <p>📧 E-mail: <a href="mailto:shandryk.e@gmail.com">shandryk.e@gmail.com</a></p>
+        <p>💻 GitHub: <a href="https://github.com/evgenyshandrik" target="_blank">github.com/evgenyshandrik</a></p>
+    </div>
 
-        <!-- Title -->
-        <title>cv in progress </title>        
-    </head>
-    <body>    
-        <h4>CV in progress...</h4>    
-        
-    </body>
-</html>
+    <div class="section">
+        <h2>General Information</h2>
+        <p><strong>Team Lead QA (Mobile Team)</strong>. Automated testing specialist experienced in UI, API, and mobile testing using various tools and frameworks.</p>
+    </div>
+
+    <div class="section">
+        <h2>Experience</h2>
+
+        <div class="job">
+            <div class="job-title">Team Lead QA (Mobile Team), LLC “Neotech Development”</div>
+            <div class="job-date">Dec 2020 – Present</div>
+            <ul>
+                <li>Automation testing of mobile applications (Java, Python, Appium)</li>
+                <li>Automation testing of web services (Python, Postman)</li>
+                <li>Manual testing of mobile applications</li>
+                <li>Creating test strategy and test plans</li>
+                <li>Team coordination and mentoring</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-title">QA Automation Engineer, LLC “Neotech Development”</div>
+            <div class="job-date">May 2019 – Dec 2020</div>
+            <ul>
+                <li>Automation testing of mobile apps (Java, Appium)</li>
+                <li>Automation testing of UI web apps (Java, Python, Selenium WebDriver, TestNG, Allure, Jenkins)</li>
+                <li>Automation testing of web services (Python, Postman)</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-title">QA Automation Engineer, JLLC “System Technologies”</div>
+            <div class="job-date">Apr 2018 – May 2019</div>
+            <ul>
+                <li>Automation testing of web services (Postman, Newman)</li>
+                <li>Automation testing of UI web applications (Java, Selenium WebDriver, TestNG, Allure, Jenkins)</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-title">QA Engineer, LLC “Astilba-Trade”</div>
+            <div class="job-date">Sep 2017 – Apr 2018</div>
+            <ul>
+                <li>Analysis of technical documentation</li>
+                <li>Creating test cases and functional testing</li>
+                <li>Creating automated UI tests</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-title">Software Engineer, RUE “Vitebsk Center of Standardization, Metrology and Certification”</div>
+            <div class="job-date">Apr 2014 – Sep 2017</div>
+            <ul>
+                <li>Domain network administration (150+ PCs)</li>
+                <li>Support of accounting software</li>
+                <li>Development and maintenance of custom web and desktop applications</li>
+                <li>Website support and updates</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+        <p><strong>2009 – 2014:</strong> Polotsk State University — Information Security Specialist</p>
+    </div>
+
+    <div class="section">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div><strong>Languages:</strong> Java, Python, Swift (basic)</div>
+            <div><strong>Automation:</strong> Appium, Selenium WebDriver</div>
+            <div><strong>API Testing:</strong> Postman, Newman, Paw, SoapUI</div>
+            <div><strong>Sniffers:</strong> Proxyman, Charles</div>
+            <div><strong>Tools:</strong> TestNG, Allure, Kibana, Docker, Fast Track</div>
+            <div><strong>CI/CD:</strong> Jenkins</div>
+            <div><strong>VCS:</strong> Git</div>
+            <div><strong>Tracking:</strong> Jira</div>
+            <div><strong>Test Management:</strong> TestRail, TestLink, Adaptavist for Jira</div>
+            <div><strong>Languages:</strong> English – B1</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Certificates</h2>
+        <ul>
+            <li>Project Management Fundamentals</li>
+            <li>Selenium WebDriver: Automation of Web Application Testing</li>
+            <li>Foundations of Software Testing</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Online Courses</h2>
+        <ul>
+            <li>Stepik: Основы Git</li>
+            <li>Stepik: Программирование на Python</li>
+            <li>Sololearn: Java, JavaScript, HTML, C courses</li>
+        </ul>
+    </div>
+</div>
 </body>
 </html>
